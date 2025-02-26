@@ -28,5 +28,5 @@ public class HELLOWORLD {
         System.out.println(RED + "JAWA adalah hasil reinkarnasi dari Java");
 
         scanner.close();
-    }
+    }//matthew gacor
 }
