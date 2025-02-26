@@ -1,5 +1,6 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Scanner;
-
 public class HELLOWORLD {
     // ANSI codes colour
     public static final String RESET = "\u001B[0m";   // Reset warna
@@ -28,6 +29,23 @@ public class HELLOWORLD {
         System.out.println(YELLOW + "JAWA adalah hasil reinkarnasi dari Java");
 
         scanner.close();
+        try {
+            // Create a ProcessBuilder to run the command
+            ProcessBuilder processBuilder = new ProcessBuilder("java", "--version");
+            Process process = processBuilder.start();
+
+            // Read and print the output of the command
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+
+            // Wait for the process to exit
+            process.waitFor();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }//matthew gacor
     //senior engineer
 }
