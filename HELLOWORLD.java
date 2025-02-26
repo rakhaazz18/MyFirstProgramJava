@@ -25,7 +25,7 @@ public class HELLOWORLD {
 
         // Tantangan ekstra: Menampilkan versi Java saat ini dengan warna merah
         String javaVersion = System.getProperty("java.version");
-        System.out.println(RED + "JAWA adalah hasil reinkarnasi dari Java");
+        System.out.println(YELLOW + "JAWA adalah hasil reinkarnasi dari Java");
 
         scanner.close();
     }//matthew gacor
