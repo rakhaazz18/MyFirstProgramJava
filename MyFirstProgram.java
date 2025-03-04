@@ -9,7 +9,7 @@ public class MyFirstProgram {
         String BLUE = "\u001B[34m";   // Biru
         String GREEN = "\u001B[32m";  // Hijau
         String YELLOW = "\u001B[33m"; // Kuning
-        String CYAN = "\u001B[36m";   // Cyan
+        String CYAN = "\u001B[36m";   //Cyan
         String RED = "\u001B[31m";    // Merah
 
         // Output welcome 
@@ -47,6 +47,6 @@ public class MyFirstProgram {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }//matthew gacor
+    }
     //senior engineer
 }
